@@ -1,0 +1,1537 @@
+*{
+    border 1px solid red;
+}
+
+html, body {
+    -webkit-overflow-scrolling: touch;
+    overflow-scrolling: touch;
+}
+
+body{
+    background-color: #FFFDEB;
+    margin: 0;
+    overscroll-behavior: none;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.row{
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+@font-face {
+  font-family: PP Hatton;
+  src: url(assets/font/PPHatton-Ultralight.otf);
+}
+@font-face {
+  font-family: PP Hatton M;
+  src: url(assets/font/PPHatton-Medium.otf);
+}
+@font-face {
+  font-family: Leiko;
+  src: url(assets/font/Leiko-Regular.otf);
+}
+@font-face {
+  font-family: PP Eiko M;
+  src: url(assets/font/PPEiko-Medium.otf);
+}
+@font-face {
+  font-family: PP Eiko L;
+  src: url(assets/font/PPEiko-Thin.otf);
+}
+
+.mode-web{
+    position: fixed;
+    left: 50%;
+    bottom: 50px;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+.mode-web a{
+    color: #FF2847;
+    text-decoration: none;
+    font-family: Leiko; 
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.navbar{
+    background: transparent !important;
+    padding: 50px;
+}
+.navbar .judul-nav{
+    font-family: Leiko; 
+    font-size: 32px;
+    line-height: 30px;
+    color: #FF2847;
+    padding: 0;
+}
+.navbar button{
+    background: transparent !important;
+    border: none;
+    padding: 10px;
+    position: relative;
+}
+.navbar button img{
+    width: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.navbar button .img-btn-menu{
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+.navbar button .img-btn-menu:hover{
+    opacity: 0;
+}
+.navbar button .img-btn-menu-hover{
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+.navbar button .img-btn-menu-hover:hover{
+    opacity: 1;
+}
+.navbar .menu-navbar{
+    position: absolute;
+    right: 75px;
+}
+.navbar .menu{
+    font-family: PP Eiko M; 
+    font-size: 14px;
+    line-height: 22px;
+    color: #000;
+    text-align: right;
+    margin: 5px 10px;
+    padding: 5px 15px;
+    text-decoration: none;
+    float: left;
+    position: relative;
+    transition: color 0.5s;
+    opacity: 0;
+    display: none;
+}
+.navbar .menu:hover{
+    color: #FF2847;
+}
+.navbar .nav-item{
+    padding: 0 25px;
+}
+
+.box-quotes{
+    margin: 100px 0;
+}
+.quotes{
+    font-family: PP Hatton; 
+    font-size: 36px;
+    line-height: 60px;
+    text-align: center;
+    font-weight: bold;
+}
+.quotes-bold{
+    font-family: PP Hatton M; 
+    font-size: 36px;
+    line-height: 60px;
+}
+.box-title{
+    margin-bottom: 50px;
+}
+.title{
+    font-family: Leiko; 
+    font-size: 48px;
+    line-height: 70px;
+}
+.sub-title{
+    font-family: PP Eiko L; 
+    font-size: 32px;
+    line-height: 52px;
+    color: #000;
+}
+.sub-title-bold{
+    font-family: PP Eiko M;
+    font-size: 32px;
+    line-height: 52px;
+    color: #000;
+}
+.body-text{
+    font-family: roboto; 
+    font-size: 14px;
+    line-height: 22px;
+    color: #000;
+    margin-bottom: 0;
+}
+.sumber{
+    font-family: roboto; 
+    font-size: 8px;
+    color: #000;
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+
+.ilustrasi{
+    position: absolute;
+    z-index: 0;
+}
+
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.box-conten-section{
+    height: 100vh;
+}
+
+.header{
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    position: relative;
+}
+.header .box-logo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.header .logo{
+    color: #FF2847;
+    font-family: Leiko;
+    font-size: 128px;
+    clip-path: inset(0px 0px 0px 0px);
+    line-height: 130px;
+}
+.header .logo2{
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+.header .logo3{
+    margin-left: -35px;
+}
+.header .tagline{
+    color: #000;
+    font-family: PP Eiko B;
+    font-size: 24px;
+    line-height: 37px;
+    position: absolute;
+    right: -85px;
+    bottom: 15px;
+    clip-path: inset(0px 0px 0px 0px);
+}
+.header .tagline2{
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+.header .back-header:nth-child(1){
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translateX(-50%);
+    max-width: 100%;
+    animation: gugunungan 30s 5s linear infinite;
+}
+.header .back-header:nth-child(2){
+    position: absolute;
+    left: -100%;
+    bottom: 5%;
+    max-width: 100%;
+    animation: sejarah 30s 5s linear infinite;
+}
+.header .back-header:nth-child(5){
+    position: absolute;
+    left: 9%;
+    top: -100%;
+    max-width: 100%;
+    animation: bima 30s 5s linear infinite;
+}
+.header .back-header:nth-child(6){
+    position: absolute;
+    right: 15%;
+    top: 100%;
+    max-width: 100%;
+    animation: gong 30s 5s linear infinite;
+}
+.header .back-header:nth-child(10){
+    position: absolute;
+    left: -100%;
+    top: 10%;
+    max-width: 100%;
+    animation: wayang 30s 5s linear infinite;
+}
+.header .back-header:nth-child(12){
+    position: absolute;
+    left: 15%;
+    top: -100%;
+    max-width: 100%;
+    animation: sinden 30s 5s linear infinite;
+}
+.header .back-header:nth-child(15){
+    position: absolute;
+    left: 100%;
+    bottom: 10%;
+    max-width: 100%;
+    animation: dalang2 30s 5s linear infinite;
+}
+@keyframes gugunungan{
+    0%{top: 100%;}
+    16.5%{top: -60%;}
+    100%{top: -60%;}
+    
+}
+@keyframes sejarah{
+    0%{left: -50%;}
+    33%{left: 100%; }
+    100%{left: 100%; }
+}
+@keyframes bima{
+    0%{top: -70%;}
+    16.5%{top: -70%;}
+    33%{top: 100%;}
+    100%{top: 100%;}
+}
+@keyframes gong{
+    0%{top: 100%;}
+    33%{top: 100%;}
+    49.5%{top: -70%;}
+    100%{top: -70%;}
+}
+@keyframes wayang{
+    0%{left: -50%;}
+    33%{left: -50%; }
+    66%{left: 100%; }
+    100%{left: 100%; }
+}
+@keyframes sinden{
+    0%{top: 100%;}
+    49.5%{top: 100%; }
+    66%{top: -70%; }
+    100%{top: -70%; }
+}
+@keyframes dalang2{
+    0%{left: 100%; }
+    49.5%{left: 100%; }
+    82.5%{left: -25%; }
+    100%{left: -25%; }
+}
+.header .back-header:nth-child(3){
+    position: absolute;
+    right: 5%;
+    bottom: 15%;
+    max-width: 100%;
+    animation: gatotkaca 30s 5s linear infinite;
+    opacity: 0;
+}
+.header .back-header:nth-child(4){
+    position: absolute;
+    left: 5%;
+    top: 20%;
+    max-width: 100%;
+    animation: pattern 30s 5s linear infinite;
+    opacity: 0;
+}
+.header .back-header:nth-child(7){
+    position: absolute;
+    right: 22%;
+    top: 10%;
+    max-width: 100%;
+    animation: meledak1 30s 5s linear infinite;
+    opacity: 0;
+}
+.header .back-header:nth-child(8){
+    position: absolute;
+    right: 19%;
+    top: 33%;
+    max-width: 100%;
+    animation: meledak2 30s 5s linear infinite;
+    opacity: 0;
+}
+.header .back-header:nth-child(9){
+    position: absolute;
+    right: 10%;
+    top: 20%;
+    max-width: 100%;
+    animation: meledak3 30s 5s linear infinite;
+    opacity: 0;
+}
+.header .back-header:nth-child(11){
+    position: absolute;
+    left: 16%;
+    top: 30%;
+    max-width: 100%;
+    animation: muka 30s 5s linear infinite;
+    opacity: 0;
+}
+.header .back-header:nth-child(13){
+    position: absolute;
+    left: 7%;
+    top: 50%;
+    transform: translateY(-50%);
+    max-width: 100%;
+    animation: nari 30s 5s linear infinite;
+    opacity: 0;
+}
+.header .back-header:nth-child(14){
+    position: absolute;
+    left: 10%;
+    bottom: -5%;
+    transform: translateY(-50%);
+    max-width: 100%;
+    animation: pattern2 30s 5s linear infinite;
+    opacity: 0;
+}
+@keyframes gatotkaca{
+    0%{opacity: 0;}
+    25%{opacity: 0;}
+    27%{opacity: 1;}
+    30%{opacity: 1;}
+    32%{opacity: 0;}
+    100%{opacity: 0;}
+}
+@keyframes pattern{
+    0%{opacity: 0;}
+    20.5%{opacity: 0;}
+    22.5%{opacity: 1;}
+    25.5%{opacity: 1;}
+    27.5%{opacity: 0;}
+    100%{opacity: 0;}
+}
+@keyframes meledak1{
+    0%{opacity: 0;}
+    40%{opacity: 0;}
+    42%{opacity: 1;}
+    45%{opacity: 1;}
+    47%{opacity: 0;}
+    100%{opacity: 0;}
+}
+@keyframes meledak2{
+    0%{opacity: 0;}
+    39%{opacity: 0;}
+    41%{opacity: 1;}
+    44%{opacity: 1;}
+    46%{opacity: 0;}
+    100%{opacity: 0;}
+}
+@keyframes meledak3{
+    0%{opacity: 0;}
+    39.5%{opacity: 0;}
+    41.5%{opacity: 1;}
+    44.5%{opacity: 1;}
+    46.5%{opacity: 0;}
+    100%{opacity: 0;}
+}
+@keyframes muka{
+    0%{opacity: 0;}
+    44%{opacity: 0;}
+    46%{opacity: 1;}
+    49%{opacity: 1;}
+    51%{opacity: 0;}
+    100%{opacity: 0;}
+}
+@keyframes nari{
+    0%{opacity: 0;}
+    52%{opacity: 0;}
+    53%{opacity: 1;}
+    56%{opacity: 1;}
+    58%{opacity: 0;}
+    100%{opacity: 0;}
+}
+@keyframes pattern2{
+    0%{opacity: 0;}
+    72%{opacity: 0;}
+    74%{opacity: 1;}
+    77%{opacity: 1;}
+    79%{opacity: 0;}
+    100%{opacity: 0;}
+}
+
+.section-2{
+    background-color: #D72847;
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    position: relative;
+}
+.section-2 img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+    max-width: 100%;
+}
+.section-2 .isi-section-2{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.sejarah {
+    overscroll-behavior: none;
+    width: 500%;
+    display: flex;
+    flex-wrap: nowrap;
+    position: relative;
+}
+.sejarah .box-judul{
+    height: 100%;
+    position: relative;
+    
+}
+.sejarah .judul-sejarah-1{
+    color: #DEA50A;
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    
+}
+.sejarah .judul-sejarah-2{
+    color: #DEA50A;
+    z-index: 2;
+    position: absolute;
+    left: 60%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+.sejarah .box-title-2{
+    color: #DEA50A;
+    margin: 0 0 50px 0;
+    z-index: 2;
+    position: relative;
+    left: -50%;
+    transform: translateX(50%);
+}
+.sejarah .body-text{
+    z-index: 2;
+}
+.sejarah .panel {
+    padding: 100px 0;
+	width: 100%;
+    height: 100vh;
+    position: relative;
+    box-sizing: border-box;
+}
+.sejarah img {
+    max-width: 100%;
+}
+.sejarah .box-sejarah {
+    position: absolute;
+}
+.sejarah .pattern-sejarah{
+    max-width: 100%;
+}
+.sejarah .sejarah-1 {
+    left: 100%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.sejarah .sejarah-1 .img-sejarah-1{
+    margin-bottom: 50px;
+    text-align: center;
+    position: relative;
+}
+.sejarah .sejarah-1 .img-sejarah-1 .pattern-1{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.sejarah .sejarah-2 {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.sejarah .sejarah-2 .img-sejarah-2{
+    margin-top: 50px;
+    text-align: center;
+}
+.sejarah .sejarah-3 {
+    left: 100%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.sejarah .sejarah-3 .img-sejarah-3{
+    margin-bottom: 50px;
+    text-align: center;
+    position: relative;
+}
+.sejarah .sejarah-3 .img-sejarah-3 .pattern-2{
+    position: absolute;
+    left: 100%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.sejarah .sejarah-4 {
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.sejarah .sejarah-4 .img-sejarah-4{
+    padding-right: 50px;
+    text-align: center;
+    position: relative;
+}
+.sejarah .sejarah-4 .img-sejarah-4 .pattern-3{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.sejarah .sejarah-5 {
+    left: 5%;
+    top: 50%;
+    transform: translate(-30%, -50%);
+}
+.sejarah .sejarah-5 .img-sejarah-5{
+    padding-top: 50px;
+    text-align: center;
+}
+.sejarah .sejarah-6 {
+    left: 75%;
+    top: 50%;
+    transform: translate(-90%, -50%);
+}
+.sejarah .sejarah-6 .img-sejarah-6{
+    padding-bottom: 50px;
+    text-align: center;
+    position: relative;
+}
+.sejarah .sejarah-6 .img-sejarah-6 .pattern-4{
+    position: absolute;
+    left: 100%;
+    top: 50%;
+    transform: translate(-50%, -60%);
+}
+
+.wagol{
+    background: #BDA037;
+    height: 585vh;
+}
+.wagol .box-wagol{
+    height: 100vh;
+    position: relative;
+}
+.muka{
+    position: absolute;
+}
+.muka:nth-child(1){
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 200px;
+}
+.muka:nth-child(2){
+    position: absolute;
+    bottom: 5%;
+    right: 10%;
+    transform: translateX(-50%);
+    max-width: 180px;
+}
+.muka:nth-child(3){
+    position: absolute;
+    top: 15%;
+    right: 10%;
+    max-width: 200px;
+}
+.muka:nth-child(4){
+    position: absolute;
+    top: 5%;
+    right: 30%;
+    max-width: 180px;
+}
+.muka:nth-child(5){
+    position: absolute;
+    top: 5%;
+    left: 10%;
+    max-width: 180px;
+}
+.muka:nth-child(6){
+    position: absolute;
+    top: 2%;
+    left: 40%;
+    transform: translateX(-50%);
+    max-width: 180px;
+}
+.muka:nth-child(7){
+    position: absolute;
+    bottom: 15%;
+    left: 5%;
+    max-width: 200px;
+}
+.muka:nth-child(8){
+    position: absolute;
+    bottom: 5%;
+    left: 25%;
+    max-width: 180px;
+}
+.wagol .title{
+    margin-bottom: 50px;
+    color: #FF2847;
+}
+.wagol .body-text{
+    color: #000;
+}
+.wagol .tokoh-wagol{
+    height: 100%;
+    width: 100%;
+    padding: 15px 0px;
+}
+
+.wagol-2{
+    position: relative;
+    margin-bottom: 200px;
+}
+.quotes-wagol{
+    color: #DEA50A;
+    text-align: center;
+    margin-top: 100px;
+}
+.wagol-2 .box-wayang{
+    position: relative;
+    height: 100vh;
+}
+.wagol-2 .title{
+    color: #000;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+.wagol-2 .body-text{
+    text-align: center;
+}
+.wagol-2 .img-wayang{
+    height: 400px;
+    width: auto;
+    margin-bottom: 25px;
+}
+.wagol-2 .nama-wayang{
+    color: #DEA50A;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.wagol-2 .ilustrasi-wayang-kiri{
+    max-width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    z-index: 0;
+    opacity: 1;
+}
+.wagol-2 .ilustrasi-wayang-kanan{
+    max-width: 100%;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    z-index: 0;
+    opacity: 1;
+}
+.wagol-2 .ilustrasi-buta{
+    max-width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+    opacity: 1;
+}
+.wagol-2 .anak-panah1{
+    max-width: 100%;
+    position: absolute;
+    top: 13%;
+    left: 25%;
+    z-index: 0;
+    transform: rotate(40deg);
+    opacity: 0;
+}
+.wagol-2 .anak-panah2{
+    max-width: 100%;
+    position: absolute;
+    top: 35%;
+    right: 25%;
+    z-index: 0;
+    transform: rotate(130deg);
+    opacity: 0;
+}
+.wagol-2 .anak-panah3{
+    max-width: 100%;
+    position: absolute;
+    top: 60%;
+    left: 10%;
+    z-index: 0;
+    transform: rotate(40deg);
+    opacity: 0;
+}
+
+.section-3{
+    background-color: #D72847;
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    position: relative;
+}
+.section-3 img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+    max-width: 100%;
+}
+.section-3 .isi-section-3{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #000;
+    z-index: 1;
+}
+
+.box-dalang {
+    margin: 100px 0 0 0;
+    position: relative;
+}
+.box-dalang .ilustrasi{
+    right: 50px;
+    top: 0;
+    z-index: 0;
+    height: 100%;
+    width: auto;
+    opacity: 1;
+}
+.box-dalang .dalang{
+    height: 100vh;
+}
+.box-dalang .dalang .title{
+    color: #DEA50A;
+    margin-top: 35px;
+    z-index: 2;
+}
+.box-dalang .dalang .box-img-dalang{
+    position: relative;
+}
+.box-dalang .dalang .box-img-dalang .image-dalang{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: dalang 3s ease-in-out infinite;
+}
+
+@keyframes dalang{
+    0%{
+        top: -2.5%; 
+    }
+    50%{
+        top: 2.5%; 
+    }
+    100%{
+        top: -2.5%; 
+    }
+}
+
+
+.box-sinden {
+    margin: 200px 0;
+    position: relative;
+    height: 100vh;
+}
+.box-sinden .ilustrasi{
+    left: 50px;
+    top: 0;
+    z-index: 0;
+    height: 100%;
+    width: auto;
+    opacity: 1;
+}
+.box-sinden .sinden{
+    height: 100vh;
+}
+.box-sinden .sinden .title{
+    color: #DEA50A;
+    z-index: 3;
+}
+.box-sinden .sinden .sub-title-bold{
+    margin-top: 15px;
+    z-index: 3;
+}
+.box-sinden .sinden .body-text{
+    z-index: 3;
+}
+.box-sinden .box-image-sinden{
+    position: relative;
+    height: 100%;
+}
+.box-sinden .box-image-sinden img{
+    position: absolute;
+    max-width: 100%:
+}
+.box-image-sinden img:nth-child(1){
+    top: 50%; 
+    left: 30%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+}
+.box-image-sinden img:nth-child(2){
+    top: 35%; 
+    left: 55%;
+    z-index: 3;
+}
+.box-image-sinden img:nth-child(3){
+    top: 48%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+}
+.box-image-sinden img:nth-child(4){
+    bottom: 15%; 
+    left: 30%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+}
+.box-image-sinden img:nth-child(5){
+    bottom: 32%; 
+    left: 50%;
+    transform: translate(-25%, 50%);
+    z-index: 3;
+}
+
+.nayaga{
+    position: relative;
+}
+.nayaga .title{
+    color: #DEA50A;
+    z-index: 3;
+}
+.nayaga .sub-title{
+    margin-top: 30px;
+    z-index: 3;
+}
+.nayaga .body-text{
+    margin-top: 30px;
+}
+.nayaga .box-nayaga img{
+    max-width: 100%;
+    z-index: 1;
+    position: relative;
+}
+.nayaga .text-nayaga{
+    margin-top: 50px;
+    z-index: 3;
+}
+.nayaga .box-pemukul{
+    position: relative;
+    z-index: 2;
+}
+.nayaga .box-pemukul img{
+    position: absolute;
+    max-width: 100%;
+    z-index: 2;
+}
+.nayaga .box-pemukul .pemukul{
+    right: 2%;
+    top: 875px;
+}
+.nayaga .meledak{
+    position: absolute;
+    z-index: -1;
+    max-width: 100%;
+}
+.nayaga .meledak1{
+    right: 10%;
+    top: -50px;
+}
+.nayaga .meledak2{
+    left: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.nayaga .meledak3{
+    right: 20%;
+    bottom: 0;
+}
+
+
+.quotes-gamelan{
+    color: #DEA50A;
+    position: relative;
+}
+
+.box-gong{
+    position: absolute;
+    height: 100vh;
+}
+.box-gong .gong{
+    max-width: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.box-gamelan-meledak{
+    position: absolute;
+    height: 100vh;
+}
+.box-gamelan-meledak .gamelan-meledak{
+    width: 200%;
+    position: absolute;
+    left: 150px;
+    top: 200px;
+}
+.gamelan{
+    position: relative;
+    width: 250%;
+    height: 300vh;
+}
+.gamelan .box-gamelan{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    position: relative;
+    box-sizing: border-box;
+    margin-left: 300px;
+    padding-top: 30px;
+}
+.gamelan .box-gamelan .gamelan1 .gamelan-title{
+    font-family: PP Eiko B; 
+    font-size: 32px;
+    line-height: 52px;
+    color: #000;
+}
+.gamelan .box-gamelan .gamelan1 img{
+    max-width: 100%;
+}
+.gamelan .box-gamelan .gamelan1{
+    margin: 0 25px;
+    position: relative;
+}
+.gamelan .box-gamelan .gamelan1:nth-child(1){
+    padding-top: 60px;
+}
+.gamelan .box-gamelan .gamelan1:nth-child(2){
+    padding-top: 65px;
+}
+.gamelan .box-gamelan .gamelan1:nth-child(3){
+    padding-top: 55px;
+}
+.gamelan .box-gamelan .gamelan1:nth-child(6){
+    margin-top: 505px;
+    margin-left: -2700px;
+}
+.gamelan .box-gamelan .gamelan1:nth-child(7){
+    margin-top: 500px;
+}
+.gamelan .box-gamelan .gamelan1:nth-child(8){
+    margin-top: 505px;
+}
+.gamelan .box-gamelan .gamelan1:nth-child(9){
+    margin-top: 500px;
+}
+.gamelan .box-gamelan .gamelan1:nth-child(11){
+    margin-top: 110px;
+}
+.gamelan .box-gamelan .gamelan1:nth-child(12){
+    margin-top: 110px;
+}
+.gamelan .box-gamelan .gamelan1:nth-child(13){
+    margin-top: 400px;
+    margin-left: -250px;
+}
+
+.panggung-text{
+    padding: 200px 0 100px 0;
+    background: #BDA037;
+    position: relative;
+}
+.panggung-text .quotes{
+    color: #000;
+    text-align: center;
+    z-index: 1;
+}
+.panggung-text .title{
+    color: #FF2847;
+    z-index: 1;
+}
+.panggung-text .sub-title-bold{
+    margin-top: 15px;
+    color: #000;
+    z-index: 1;
+}
+.panggung-text .body-text{
+    color: #000;
+    z-index: 1;
+}
+.panggung-text .box-quotes img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+    max-width: 500px;
+}
+.panggung-text .box-quotes{
+    position: relative;
+}
+.panggung{
+    margin-bottom: 100px;
+    background: #BDA037;
+    background-image: url(assets/img/ilustrasi/geung.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.panggung .box-panggung{
+    display: flex;
+    justify-content: start;
+    position: relative;
+    box-sizing: border-box;
+    height: 100vh;
+}
+.panggung .box-panggung img{
+    max-width: 100%;
+    position: absolute;
+    padding-left: 0;
+    padding-right: 0;
+}
+.panggung .box-panggung img:nth-child(1){
+    z-index: 3;
+    top: 0;
+}
+.panggung .box-panggung img:nth-child(2){
+    z-index: 1;
+    bottom: -200px;
+    max-width: 90%;
+}
+.panggung .box-panggung img:nth-child(3){
+    z-index: 2;
+    max-width: 50%;
+    left: 0;
+    top: 100px;
+}
+.panggung .box-panggung img:nth-child(4){
+    z-index: 2;
+    max-width: 50%;
+    right: 0;
+    top: 100px;
+}
+.panggung .box-panggung img:nth-child(5){
+    z-index: 3;
+    bottom: -100px;
+}
+.panggung .box-text-panggung{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 6;
+}
+.panggung .box-text-panggung2{
+    position: relative;
+    z-index: 6;
+}
+.panggung .box-text-panggung .text-panggung{
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    padding: 0 15px;
+    color: #FFFDEB;
+}
+.panggung .box-text-panggung .text-panggung .body-text{
+    color: #FFFDEB;
+}
+
+.video{
+    height: 100vh;
+    position: relative;
+}
+.box-video{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.video2{
+    z-index: 2;
+    width: 100%;
+    height: 600px;
+    position: relative;
+}
+.video .img-pattern-video1{
+    position: absolute;
+    top: 0;
+    left: 5%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+}
+.video .img-pattern-video2{
+    position: absolute;
+    top: 25%;
+    right: -25%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+}
+.video .img-pattern-video3{
+    position: absolute;
+    bottom: -25%;
+    left: 50%;
+    transform: translate(-50%, -25%);
+    z-index: 0;
+}
+
+.galeri{
+    height: 100vh;
+    position: relative;
+    margin: 0 0 200px 0;
+    z-index: 0;
+}
+.box-galeri{
+    position: relative;
+    height: 100vh;
+}
+.btn-galeri{
+    background: none;
+    border: none;
+    position: absolute;
+    max-width: 100%;
+    opacity: 1;
+}
+.img-galeri{
+    transition: transform 0.5s;
+}
+.img-galeri:hover{
+    transform: scale(1.1);
+}
+.btn-close{
+    background: none;
+    border: none;
+    position: absolute;
+    right: 50px;
+    top: 25px;
+    color: #000;
+    z-index: 10;
+    opacity: 1 !important;
+    text-align: center;
+    width: auto;
+    height: auto;
+    font-size: 30px;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    border-radius: 0;
+}
+.btn-close:hover{
+    border: none;
+    text-decoration: none;
+    color: #FF2847;
+    opacity: 1;
+}
+.btn-galeri .img-galeri{
+    max-width: 100%;
+}
+.galeri button:nth-child(1){
+    top: 25%;
+    left: 25%;
+    transform: translate(-50%, -50%) rotate(-10deg);
+    z-index: 0;
+}
+.galeri button:nth-child(2){
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%) rotate(10deg);
+    z-index: 1;
+}
+.galeri button:nth-child(3){
+    top: 25%;
+    right: 10%;
+    transform: translate(-50%, -30%) rotate(8deg);
+    z-index: 0;
+}
+.galeri button:nth-child(4){
+    bottom: 0;
+    left: 25%;
+    transform: translate(-50%, -40%) rotate(5deg);
+    z-index: 1;
+}
+.galeri button:nth-child(5){
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%) rotate(-5deg);
+    z-index: 2;
+}
+.galeri button:nth-child(6){
+    top: 50%;
+    right: 28%;
+    transform: translate(-50%, -50%) rotate(15deg);
+    z-index: 2;
+}
+.galeri button:nth-child(7){
+    bottom: 0;
+    right: 10%;
+    transform: translate(-50%, -30%) rotate(-5deg);
+    z-index: 4;
+}
+.galeri button:nth-child(8){
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%) rotate(-10deg);
+    z-index: 2;
+}
+.modal{
+    background: #FFFDEB;
+}
+.modal-dialog{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) !important;
+    background: transparent;
+    width: 100% !important;
+    height: 100% !important;
+    padding: 0  !important;
+    margin: 0  !important;
+    border-radius: 0;
+}
+.modal-content{
+    background: transparent;
+    border-radius: 0;
+    height: 100%;
+    width: 100%;
+}
+.modal-body{
+    background: transparent;
+    border-radius: 0;
+    height: 100%;
+    width: 100%;
+}
+.modal-body .back-slider-galeri{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) !important;
+    height: 80%;
+    width: auto;
+    opacity: 0.3;
+}
+.modal-body .carousel{
+    height: 100%;
+    width: 100%;
+    padding: 10% 0;
+}
+.modal-body .carousel-inner{
+    height: 100%;
+    width: 100%;
+}
+.modal-body .carousel-item{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.modal-body .preview-img-galeri{
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.finish{
+    padding: 0;
+    text-align: center;
+    height: 100vh;
+    position: relative;
+    width: 100%;
+    margin: 0;
+    margin-top: -100px;
+}
+.finish img{
+    max-width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0 15px 0 15px;
+}
+.finish .gugunungan{
+    z-index: 1;
+}
+.finish .pattern3{
+    max-width: 100%;
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    padding: 0 15px 0 15px;
+    z-index: -1;
+}
+.finish .box-title{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.finish .title{
+    color: #DEA50A;
+}
+.finish .quotes{
+    color: #000;
+}
+.finish .quotes-bold{
+    color: #000;
+}
+.finish .body-text{
+    color: #000;
+}
+
+@media (max-width: 1900px){ 
+    .sejarah .panel {
+        padding-top: 50px;
+    }
+    .sejarah .pattern-sejarah{
+        max-width: 300px;
+    }
+    .nayaga .box-pemukul .pemukul{
+        right: 1%;
+    }
+    .wagol-2 .anak-panah1{
+        top: 13%;
+        left: 20%;
+    }
+    .wagol-2 .cepot{
+        padding: 100px;
+    }
+    .nayaga .meledak1{
+        right: 5%;
+        top: -50px;
+    }
+    .nayaga .meledak2{
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .nayaga .meledak3{
+        right: 5%;
+        bottom: 0;
+    }
+    .gamelan{
+        width: 200%;
+    }
+    .gamelan .box-gamelan{
+        margin-left: 250px;
+    }
+    .gamelan .box-gamelan .gamelan1 img{
+        max-width: 100%;
+    }
+    .gamelan .box-gamelan .selentem img{
+        max-width: 65%;
+    }
+    .gamelan .box-gamelan .gamelan1:nth-child(1){
+        padding-top: 60px;
+    }
+    .gamelan .box-gamelan .gamelan1:nth-child(2){
+        padding-top: 65px;
+    }
+    .gamelan .box-gamelan .gamelan1:nth-child(3){
+        padding-top: 55px;
+    }
+    .gamelan .box-gamelan .gamelan1:nth-child(6){
+        margin-top: 355px;
+        margin-left: -1850px;
+    }
+    .gamelan .box-gamelan .gamelan1:nth-child(7){
+        margin-top: 350px;
+        margin-left: -100px;
+    }
+    .gamelan .box-gamelan .gamelan1:nth-child(8){
+        margin-top: 350px;
+    }
+    .gamelan .box-gamelan .gamelan1:nth-child(9){
+        margin-top: 350px;
+    }
+    .gamelan .box-gamelan .gamelan1:nth-child(11){
+        margin-top: 60px;
+    }
+    .gamelan .box-gamelan .gamelan1:nth-child(12){
+        margin-top: 60px;
+    }
+    .gamelan .box-gamelan .gamelan1:nth-child(13){
+        margin-top: 250px;
+        margin-left: -200px;
+    }
+    .gamelan-meledak{
+        width: 175%;
+        left: 100px;
+    }
+    .panggung .box-panggung img:nth-child(5){
+        bottom: -125px;
+    }
+    .video{
+        margin: 200px 0;
+    }
+    .video .video2{
+        height: 500px;
+    }
+    .galeri button:nth-child(1){
+        top: 25%;
+        left: 25%;
+        transform: translate(-50%, -50%) rotate(-10deg);
+    }
+    .galeri button:nth-child(2){
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%) rotate(10deg);
+    }
+    .galeri button:nth-child(3){
+        top: 25%;
+        right: 5%;
+        transform: translate(-50%, -50%) rotate(8deg);
+    }
+    .galeri button:nth-child(4){
+        bottom: 0;
+        left: 25%;
+        transform: translate(-50%, -40%) rotate(5deg);
+    }
+    .galeri button:nth-child(5){
+        top: 50%;
+        left: 40%;
+        transform: translate(-50%, -50%) rotate(-5deg);
+    }
+    .galeri button:nth-child(6){
+        top: 50%;
+        right: 20%;
+        transform: translate(-50%, -50%) rotate(15deg);
+    }
+    .galeri button:nth-child(7){
+        bottom: 0;
+        right: 5%;
+        transform: translate(-50%, -30%) rotate(-5deg);
+    }
+    .galeri button:nth-child(8){
+        bottom:100px;
+        left: 50%;
+        transform: translateX(-50%) rotate(-10deg);
+    }
+    .finish img{
+        height: 400px;
+        width: auto;
+        top: 40%;
+        transform: translate(-50%, -50%);
+    }
+    .finish .pattern3{
+        top: -40%;
+    }
+    .finish .title{
+        font-size: 32px;
+    }
+    .finish .quotes-bold{
+        font-size: 28px;
+    }
+}
